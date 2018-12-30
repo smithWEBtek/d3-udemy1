@@ -14,9 +14,12 @@ const data = [
 
 const svg = d3.select('svg');
 
+// join data to rects
 const rects = svg.selectAll('rect')
 	.data(data)
-	.attr('x', d => d.x)
+
+// adds attrs to the existing 'rects' in the DOM
+rects.attr('x', d => d.x)
 	.attr('y', d => d.y)
 	.attr('width', function (d, i, n) {
 		console.log(`n:${i} `, n[i]);
@@ -27,6 +30,9 @@ const rects = svg.selectAll('rect')
 
 console.log('rects before enter/append: ', rects);
 
+
+// append the enter selection to DOM
+// appends a new rect and populates it for the remainder of items in the "enter() selection"
 rects.enter()
 	.append('rect')
 	.attr('x', d => d.x)
