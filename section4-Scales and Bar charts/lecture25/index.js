@@ -7,6 +7,7 @@ const svg = d3.select('.canvas')
 // create margins on dimensions
 const margin = { top: 100, right: 20, bottom: 100, left: 100 };
 const graphWidth = 600 - margin.left - margin.right;
+// const graphHeight = 600 - margin.top - margin.bottom;
 const graphHeight = 600 - margin.top - margin.bottom;
 
 // create group
@@ -14,9 +15,6 @@ const graph = svg.append('g')
 	.attr('width', graphWidth)
 	.attr('height', graphHeight)
 	.attr('transform', `translate(${margin.left}, ${margin.top})`)
-
-
-
 
 d3.json('menu.json').then(response => {
 	let data = response.sort((a, b) => a.orders < b.orders ? -1 : 1)

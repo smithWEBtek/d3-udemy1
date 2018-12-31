@@ -69,10 +69,17 @@ d3.json('menu.json').then(response => {
 	// create and call the axes
 	const xAxis = d3.axisBottom(x)
 	const yAxis = d3.axisLeft(y)
+		.ticks(9)
+		.tickFormat(d => `${d} orders`);
 
 	// apply these to:  
 	// const xAxisGroup = graph.append('g')
 	// const yAxisGroup = graph.append('g')
 	xAxisGroup.call(xAxis)
 	yAxisGroup.call(yAxis)
+
+	xAxisGroup.selectAll('text')
+		.attr('transform', 'rotate(-40)')
+		.attr('text-anchor', 'end')
+		.attr('fill', 'black');
 })
