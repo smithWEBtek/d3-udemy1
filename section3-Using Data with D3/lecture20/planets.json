@@ -1,21 +1,25 @@
 [
 	{
 		"radius": 50,
+		"orbit": 100,
 		"distance": 110,
 		"fill": "orange"
 	},
 	{
 		"radius": 70,
+		"orbit": 130,
 		"distance": 260,
 		"fill": "red"
 	},
 	{
 		"radius": 35,
+		"orbit": 150,
 		"distance": 400,
 		"fill": "brown"
 	},
 	{
 		"radius": 55,
+		"orbit": 170,
 		"distance": 530,
 		"fill": "green"
 	}

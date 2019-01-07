@@ -1,5 +1,5 @@
 // const data = [
-// 	{ x: 50, y: 23, width: 200, height: 300, fill: 'grey' },
+// 	{ x: 50, y: 23, width: 200, height: 300, fill: 'purple' },
 // 	{ x: 50, y: 23, width: 100, height: 60, fill: 'pink' },
 // 	{ x: 50, y: 23, width: 50, height: 30, fill: 'red' }
 // ];
@@ -18,11 +18,12 @@ const data = [
 	{ x: 260, y: 115, width: 30, height: 10, fill: 'yellow' },
 ];
 
-for (i = 0; i < data.length; i++) {
-	svg.append('rect')
-}
+// for (i = 0; i < data.length; i++) {
+// 	svg.append('rect')
+// }
 
 
+// const rect = svg.select('rect')
 const rect = svg.selectAll('rect')
 	.data(data)
 	.attr('x', d => d.x)

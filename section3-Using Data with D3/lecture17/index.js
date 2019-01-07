@@ -1,5 +1,5 @@
 const data = [
-	{ x: 50, y: 23, width: 200, height: 300, fill: 'grey' }
+	{ x: 50, y: 20, width: 40, height: 20, fill: 'violet' }
 ];
 
 const svg = d3.select('svg');
@@ -7,7 +7,7 @@ const svg = d3.select('svg');
 // const rect = svg.select('rect')
 // 	.data(data)
 // 	.attr('width', (d, i, n) => {
-// 		// console.log('arrow function this: ', this)
+// 		console.log('arrow function this: ', this)
 // 		console.log('using n[i] to retrieve element: ', n[i])
 // 		return d.width
 // 	})

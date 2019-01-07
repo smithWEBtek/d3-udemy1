@@ -1,18 +1,26 @@
 [
 	{
 		"name": "soup",
-		"orders": 200
+		"orders": 1000
 	},
 	{
 		"name": "curry",
-		"orders": 600
+		"orders": 7077
 	},
 	{
 		"name": "pasta",
-		"orders": 300
+		"orders": 5055
 	},
 	{
 		"name": "surprise",
-		"orders": 900
+		"orders": 1803
+	},
+	{
+		"name": "beef",
+		"orders": 113
+	},
+	{
+		"name": "lamb",
+		"orders": 4403
 	}
 ]
