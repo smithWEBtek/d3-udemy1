@@ -22,18 +22,21 @@ const svg = canvas.append('svg')
 	.attr('width', 600);
 
 // append shapes to svg container
+// chain methods .attr
 svg.append('rect')
 	.attr('width', 200)
 	.attr('height', 100)
-	.attr('fill', 'blue')
+	.attr('fill', 'purple')
 	.attr('x', 20)
-	.attr('y', 20)
+	.attr('y', 150)
+	.attr('stroke', 'red')
+	.attr('stroke-width', 5)
 
 svg.append('circle')
 	.attr('r', 50)
 	.attr('cx', 300)
 	.attr('cy', 70)
-	.attr('fill', 'pink')
+	.attr('fill', 'yellow')
 	.attr('stroke', 'black')
 // .attr('stroke-width', 2)
 
@@ -42,5 +45,5 @@ svg.append('line')
 	.attr('y1', 20)
 	.attr('x2', 400)
 	.attr('y2', 120)
-	.attr('stroke', 'red')
-	.attr('stroke-width', 2)
+	.attr('stroke', '#556677')
+	.attr('stroke-width', 5)

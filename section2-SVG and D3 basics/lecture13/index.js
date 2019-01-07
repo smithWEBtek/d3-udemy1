@@ -52,4 +52,11 @@ svg.append('text')
 	.text('Hello ninjas')
 	.style('font-family', 'Arial')
 
+svg.append('text')
+	.attr('x', 20)
+	.attr('y', 250)
+	.attr('fill', 'grey')
+	.text('This is a great course!')
+	.style('font-style', 'italic')
+
 

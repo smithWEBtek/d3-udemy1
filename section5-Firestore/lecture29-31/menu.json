@@ -1,0 +1,46 @@
+[
+	{
+		"name": "soup",
+		"orders": 200
+	},
+	{
+		"name": "curry",
+		"orders": 600
+	},
+	{
+		"name": "pasta",
+		"orders": 300
+	},
+	{
+		"name": "surprise",
+		"orders": 900
+	},
+	{
+		"name": "curry",
+		"orders": 600
+	},
+	{
+		"name": "pasta",
+		"orders": 300
+	},
+	{
+		"name": "surprise",
+		"orders": 900
+	},
+	{
+		"name": "burger",
+		"orders": 1600
+	},
+	{
+		"name": "pie",
+		"orders": 1200
+	},
+	{
+		"name": "cake",
+		"orders": 1400
+	},
+	{
+		"name": "hotdog",
+		"orders": 1800
+	}
+]
