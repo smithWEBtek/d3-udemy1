@@ -1,5 +1,4 @@
 // select svg container
-
 const svg = d3.select('svg');
 
 d3.json('planets.json')
@@ -18,7 +17,7 @@ d3.json('planets.json')
 		//append the "enter selection" to DOM
 		circs.enter()
 			.append('circle')
-			// .attr('cy', 100)
+			.attr('cy', 100)
 			.attr('cy', d => d.orbit)
 			.attr('cx', d => d.distance)
 			.attr('r', d => d.radius)
