@@ -2,8 +2,7 @@ const svg = d3.select('svg');
 
 d3.json('planets.json')
 	.then(data => {
-		// console.log(data);
-
+ 
 		const circs = svg.selectAll('circle')
 			.data(data)
 
