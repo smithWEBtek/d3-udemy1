@@ -27,7 +27,9 @@ rects.attr('x', d => d.x)
 		return d.width
 	})
 	.attr('height', d => d.height)
-	.attr('fill', d => d.fill);
+	.attr('fill', d => d.fill)
+	.attr('stroke', 'orange')
+	.attr('stroke-width', 16);
 
 console.log('rects before enter/append: ', rects);
 
@@ -43,5 +45,7 @@ rects.enter()
 		return d.width
 	})
 	.attr('height', d => d.height)
-	.attr('fill', d => d.fill);
+	.attr('fill', d => d.fill)
+	.attr('stroke', 'red')
+	.attr('stroke-width', 3);
 console.log('rects after enter/append: ', rects);
