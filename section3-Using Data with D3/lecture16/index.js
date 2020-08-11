@@ -8,7 +8,7 @@ const svg = d3.select('svg');
 
 // dynamically assigning attributes
 const data = [
-	{ width: 200, height: 400, fill: 'pink' },
+	{ width: 200, height: 00, fill: 'pink' },
 	{ width: 200, height: 400, fill: 'purple' },
 	{ width: 120, height: 300, fill: 'gray' }
 ];
@@ -17,11 +17,11 @@ const data = [
 
 
 const rect = svg.select('rect')
-	.data([data[1]])
+	.data([data[2]])
 	.attr('width', function (d, i, n) {
 		console.log("data: ", d)
 		console.log("index: ", i)
-		console.log("node?: ", n)
+		console.log("node: ", n)
 		return d.width
 	})
 	.attr('height', function (d, i, n) { return d.height })
