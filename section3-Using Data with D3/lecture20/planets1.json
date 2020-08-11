@@ -22,5 +22,29 @@
 		"orbit": 170,
 		"distance": 530,
 		"fill": "green"
+	},
+	{
+		"radius": 55,
+		"orbit": 100,
+		"distance": 110,
+		"fill": "pink"
+	},
+	{
+		"radius": 75,
+		"orbit": 130,
+		"distance": 260,
+		"fill": "yellow"
+	},
+	{
+		"radius": 40,
+		"orbit": 150,
+		"distance": 400,
+		"fill": "green"
+	},
+	{
+		"radius": 60,
+		"orbit": 170,
+		"distance": 530,
+		"fill": "blue"
 	}
 ]
