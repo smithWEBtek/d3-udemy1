@@ -12,7 +12,15 @@
 		"orders": 300
 	},
 	{
-		"name": "surprise",
-		"orders": 900
+		"name": "beef",
+		"orders": 600
+	},
+	{
+		"name": "chicken",
+		"orders": 500
+	},
+	{
+		"name": "salad",
+		"orders": 800
 	}
 ]
