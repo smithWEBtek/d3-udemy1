@@ -1,7 +1,11 @@
 .canvas {
-	background-color :#8d55cd3f;
+  background-color: #8d55cd3f;
 }
 
 svg {
-	background-color :#436ea73f;
+  background-color: #436ea73f;
+}
+
+.rect {
+  border: 2px solid red;
 }
