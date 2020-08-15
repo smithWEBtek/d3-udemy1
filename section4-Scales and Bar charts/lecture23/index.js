@@ -3,16 +3,20 @@ const svg = d3.select('svg')
 
 d3.json('menu.json').then(data => {
 
-  const y = d3.scaleLinear()
-    .domain([0, 1000])
-    .range([0, 500])
-
   const min = d3.min(data.map(d => d.orders))
   const max = d3.max(data.map(d => d.orders))
   const extent = d3.extent(data.map(d => d.orders))
   console.log('min: ', min)
   console.log('max: ', max)
   console.log('extent: ', extent)
+
+
+  const y = d3.scaleLinear()
+    // .domain([0, 1000])
+    // .domain([min, max])
+    .domain(extent)
+    .range([0, 250])
+
 
 
   const x = d3.scaleBand()
