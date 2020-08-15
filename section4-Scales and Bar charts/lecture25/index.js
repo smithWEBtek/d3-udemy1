@@ -1,19 +1,22 @@
+// only grab the css element, no svg present in html until we append it with our code
 const svg = d3.select('.canvas')
-	.append('svg')
+	.append('svg') // appending the svg, instead of having it already in the DOM
 	.attr('width', 600)
 	.attr('height', 600)
 	.attr('margin-left', 130);
 
-// create margins on dimensions
-const margin = { top: 100, right: 20, bottom: 100, left: 100 };
+// create margins on dimensions, give 4 named values
+const margin = { top: 50, right: 10, bottom: 50, left: 50 };
+// do the math to accomodate the height and width given aboave
 const graphWidth = 600 - margin.left - margin.right;
-// const graphHeight = 600 - margin.top - margin.bottom;
 const graphHeight = 600 - margin.top - margin.bottom;
 
-// create group
+// append group elemen to svg instantiated above
 const graph = svg.append('g')
-	.attr('width', graphWidth)
-	.attr('height', graphHeight)
+	.attr('width', graphWidth)    // use graphWidth variable from above
+	.attr('height', graphHeight)  // use graphHeight variable from above
+	// transform attribute applies margin-left and margin-right to the graph
+	// otherwise your variables don't get used, they are only declared up to this point
 	.attr('transform', `translate(${margin.left}, ${margin.top})`)
 
 d3.json('menu.json').then(response => {
