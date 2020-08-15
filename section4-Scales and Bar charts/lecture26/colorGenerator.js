@@ -1,25 +1,27 @@
 
-generateColors = (numberOfColors) => {
+generateColors = () => {
 	let colors = []
 
 	function genColor() {
 		let color = 'rgb('
-		let r = Math.floor(Math.random() * 255).toString()
-		let g = Math.floor(Math.random() * 255).toString()
-		let b = Math.floor(Math.random() * 255).toString()
+		let n1 = Math.floor(Math.random() * 255).toString()
+		let n2 = Math.floor(Math.random() * 255).toString()
+		let n3 = Math.floor(Math.random() * 255).toString()
 
-		color += r + ','
-		color += g + ','
-		color += b + ')'
+		if (n1 === n2 && n2 === n3) {
+			n1 = Math.floor(Math.random() * 255).toString()
+			n2 = Math.floor(Math.random() * 255).toString()
+			n3 = Math.floor(Math.random() * 255).toString()
+		}
+
+		color += n1 + ','
+		color += n2 + ','
+		color += n3 + ')'
 
 		return color
 	}
-	for (i = 0; i < numberOfColors; i++) {
-		let gcolor = genColor()
-		if (colors.includes(gcolor)) {
-			gcolor = genColor()
-		}
-		colors.push(gcolor)
+	for (i = 0; i < 20; i++) {
+		colors.push(genColor())
 	}
 	return colors[Math.floor(Math.random() * colors.length - 1)];
 }
