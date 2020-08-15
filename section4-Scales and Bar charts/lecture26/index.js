@@ -21,7 +21,9 @@ const xAxisGroup = graph.append('g')
 
 const yAxisGroup = graph.append('g')
 
+// data
 d3.json('menu.json').then(response => {
+	// let data = response
 	let data = response.sort((a, b) => a.orders < b.orders ? -1 : 1)
 	const y = d3.scaleLinear()
 		.domain([0, d3.max(data, d => d.orders)])
@@ -55,8 +57,8 @@ d3.json('menu.json').then(response => {
 
 
 	// create and call the axes
-	const xAxis = d3.axisBottom(x)
-	const yAxis = d3.axisLeft(y)
+	const xAxis = d3.axisBottom(x);
+	const yAxis = d3.axisLeft(y);
 
 	xAxisGroup.call(xAxis)
 	yAxisGroup.call(yAxis)
